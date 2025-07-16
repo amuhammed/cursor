@@ -1,0 +1,5 @@
+/workspace/src/main/java/com/example/azurekeyvaultdemo/controller/DemoController.java
+/workspace/src/main/java/com/example/azurekeyvaultdemo/service/KeyVaultService.java
+/workspace/src/main/java/com/example/azurekeyvaultdemo/config/AppConfig.java
+/workspace/src/main/java/com/example/azurekeyvaultdemo/controller/KeyVaultController.java
+/workspace/src/main/java/com/example/azurekeyvaultdemo/AzureKeyVaultDemoApplication.java

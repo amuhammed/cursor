@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          enabled: false
+
+# Test configuration values
+database-connection-string: test-database-connection
+api-key: test-api-key
+jwt-secret: test-jwt-secret
+
+logging:
+  level:
+    com.example: DEBUG
+    root: INFO

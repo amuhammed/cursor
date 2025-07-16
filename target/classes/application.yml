@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: azure-keyvault-demo
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          enabled: true
+          endpoint: ${AZURE_KEYVAULT_ENDPOINT:https://your-keyvault-name.vault.azure.net/}
+          property-sources:
+            - endpoint: ${AZURE_KEYVAULT_ENDPOINT:https://your-keyvault-name.vault.azure.net/}
+              name: azure-keyvault
+              case-sensitive: false
+      credentials:
+        client-id: ${AZURE_CLIENT_ID:}
+        client-secret: ${AZURE_CLIENT_SECRET:}
+      profile:
+        tenant-id: ${AZURE_TENANT_ID:}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.azure: DEBUG
+    com.example: DEBUG
+    root: INFO
